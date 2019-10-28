@@ -1,0 +1,48 @@
+.footer{
+    background-color: $color-secondary;
+    grid-column: full-start/full-end;
+    padding: 8rem;
+}
+
+.nav{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2rem;
+        align-items: center;
+    &__link:link, &__link:visited{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        padding: 1.5rem;
+        transition: all .2s;
+    }
+    &__link:hover, &__link:active{
+        background-color: rgba(#fff, 0.2);
+        transform: translateY(-1rem);
+    }
+}
+.copyright{
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    margin-top: 6rem;
+    width: 70%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    a:link, a:visited{
+        display: inline-block;
+        text-decoration: none;
+        color: $color-primary;
+        transition: all .2s;
+    }
+    a:active, a:hover{
+        color: lighten($color-primary, 20%);
+        transform: translateY(-0.5rem) ;
+    }
+}
